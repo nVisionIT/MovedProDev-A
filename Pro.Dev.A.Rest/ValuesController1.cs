@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Mail;
 using System.Web.Http;
+using SendGrid;
 
 namespace Pro.Dev.A.Rest
 {
@@ -46,6 +47,11 @@ namespace Pro.Dev.A.Rest
             }
 
             MailAddress mail = new MailAddress(email.To);
+
+            if (email.DeliveryType != "Email")
+            {
+                throw new Exception("Delivery Type not set to type,  Email.");
+            }
         }
     }
 }
