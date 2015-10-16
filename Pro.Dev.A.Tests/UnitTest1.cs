@@ -56,6 +56,19 @@ namespace Pro.Dev.A.Tests
             con.Submit(email);
         }
 
+        [TestMethod]
+        [ExpectedException(typeof(Exception))]
+        public void SendJson_vaildEmailAddressTo()
+        {
+            EmailModel email = new EmailModel();
+
+            email.To = "sdfsdfsdf";
+            email.Subject = "sdfsdf";
+            email.Message = "me@foo.com";
+            email.DeliveryType = "me@foo.com";
+
+            con.Submit(email);
+        }
 
     }
 }
