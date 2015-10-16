@@ -97,17 +97,20 @@ namespace Pro.Dev.A.Tests
             con.Submit(email);
         }
 
-        //[TestMethod]
-        //public void SendGrid_Send()
-        //{
-        //    EmailModel email = new EmailModel();
+        [TestMethod]
+        public void SendGrid_Send()
+        {
+            EmailModel email = new EmailModel();
 
-        //    email.To = "test@mail.com";
-        //    email.Subject = "sdfsdf";
-        //    email.Message = "me@foo.com";
-        //    email.DeliveryType = "Email";
+            email.To = "test@mail.com";
+            email.Subject = "sdfsdf";
+            email.Message = "me@foo.com";
+            email.DeliveryType = "Email";
 
-        //}
+            EmailEngine execute = new EmailEngine(email);
+            execute.Send();
+
+        }
 
     }
 }

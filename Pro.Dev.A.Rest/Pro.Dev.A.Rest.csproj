@@ -96,6 +96,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmailEngine.cs" />
     <Compile Include="EmailModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValuesController1.cs" />
