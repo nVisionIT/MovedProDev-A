@@ -57,7 +57,20 @@ namespace Pro.Dev.A.Tests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(Exception))]
+        [ExpectedException(typeof(System.FormatException))]
+        public void SendJson_vaildEmailAddressToException()
+        {
+            EmailModel email = new EmailModel();
+
+            email.To = "sdfsdfsdf";
+            email.Subject = "sdfsdf";
+            email.Message = "me@foo.com";
+            email.DeliveryType = "me@foo.com";
+
+            con.Submit(email);
+        }
+
+        [TestMethod]
         public void SendJson_vaildEmailAddressTo()
         {
             EmailModel email = new EmailModel();

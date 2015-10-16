@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Net.Mail;
 using System.Web.Http;
 
 namespace Pro.Dev.A.Rest
@@ -38,10 +39,13 @@ namespace Pro.Dev.A.Rest
 
         public void Submit(EmailModel email)
         {
+             
             if (string.IsNullOrEmpty(email.To) || string.IsNullOrEmpty(email.Subject))
             {
                 throw new Exception("Data is not correct");
             }
+
+            MailAddress mail = new MailAddress(email.To);
         }
     }
 }
