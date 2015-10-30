@@ -1,18 +1,19 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Pro.Dev.A.Rest;
+using Pro.Dev.A.Rest2.Controllers;
 
 namespace Pro.Dev.A.Tests
 {
     [TestClass]
     public class ValuesControllerTests
     {
-        ValuesController1 con;
+        ValuesController con;
 
         [TestInitialize]
         public void Setup()
         {
-            con = new ValuesController1();
+            con = new ValuesController();
         }
     
         [TestMethod]
@@ -25,7 +26,7 @@ namespace Pro.Dev.A.Tests
             email.Message = "me@foo.com";
             email.DeliveryType = "Email";
 
-            con.Submit(email);
+            con.SendEmail(email);
         }
 
         [TestMethod]
@@ -39,7 +40,7 @@ namespace Pro.Dev.A.Tests
             email.Message = "me@foo.com";
             email.DeliveryType = "Email";
 
-            con.Submit(email);
+            con.SendEmail(email);
         }
 
         [TestMethod]
@@ -53,7 +54,7 @@ namespace Pro.Dev.A.Tests
             email.Message = "me@foo.com";
             email.DeliveryType = "Email";
 
-            con.Submit(email);
+            con.SendEmail(email);
         }
 
         [TestMethod]
@@ -67,7 +68,7 @@ namespace Pro.Dev.A.Tests
             email.Message = "me@foo.com";
             email.DeliveryType = "Email";
 
-            con.Submit(email);
+            con.SendEmail(email);
         }
 
         [TestMethod]
@@ -80,7 +81,7 @@ namespace Pro.Dev.A.Tests
             email.Message = "me@foo.com";
             email.DeliveryType = "Email";
 
-            con.Submit(email);
+            con.SendEmail(email);
         }
 
         [TestMethod]
@@ -94,7 +95,7 @@ namespace Pro.Dev.A.Tests
             email.Message = "me@foo.com";
             email.DeliveryType = "Post";
 
-            con.Submit(email);
+            con.SendEmail(email);
         }
 
         [TestMethod]

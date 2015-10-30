@@ -61,9 +61,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Pro.Dev.A.Rest\Pro.Dev.A.Rest.csproj">
-      <Project>{31c2df0e-d5a4-42bc-ba52-0515cb46f2d4}</Project>
-      <Name>Pro.Dev.A.Rest</Name>
+    <ProjectReference Include="..\Pro.Dev.A.Rest2\Pro.Dev.A.Rest2.csproj">
+      <Project>{8802c01e-98c3-4dc1-a3e5-e326cef05e82}</Project>
+      <Name>Pro.Dev.A.Rest2</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
