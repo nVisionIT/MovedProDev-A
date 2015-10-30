@@ -56,7 +56,7 @@ namespace Pro.Dev.A.Rest2.Controllers
                 throw new Exception("Delivery Type not set to type,  Email.");
             }
 
-            return base.Request.CreateResponse(HttpStatusCode.Accepted, "hello");
+            return base.Request.CreateResponse(HttpStatusCode.OK', "hello");
         }
     }
 }
