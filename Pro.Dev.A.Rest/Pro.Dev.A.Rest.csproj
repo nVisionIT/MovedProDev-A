@@ -63,6 +63,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\nVisionITProDevGroupA - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\nVisionITProDevGroupA - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
