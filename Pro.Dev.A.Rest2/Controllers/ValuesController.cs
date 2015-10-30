@@ -48,7 +48,7 @@ namespace Pro.Dev.A.Rest2.Controllers
             {
                 throw new Exception("Data is not correct");
             }
-
+             
             MailAddress mail = new MailAddress(email.To);
 
             if (email.DeliveryType != "Email")
