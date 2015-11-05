@@ -41,14 +41,14 @@ namespace Pro.Dev.A.Rest2.Controllers
 
 
         [HttpPost]
-        public void SendEmail(EmailModel email)
+        public HttpResponseMessage SendEmail(EmailModel email)
         {
 
             if (string.IsNullOrEmpty(email.To) || string.IsNullOrEmpty(email.Subject))
             {
                 throw new Exception("Data is not correct");
             }
-
+             
             MailAddress mail = new MailAddress(email.To);
 
             if (email.DeliveryType != "Email")
@@ -56,7 +56,7 @@ namespace Pro.Dev.A.Rest2.Controllers
                 throw new Exception("Delivery Type not set to type,  Email.");
             }
 
-           // return base.Request.CreateResponse(HttpStatusCode.Accepted, "hello");
+            return base.Request.CreateResponse(HttpStatusCode.OK);
         }
     }
 }

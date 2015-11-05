@@ -2,7 +2,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Pro.Dev.A.Rest;
 using Pro.Dev.A.Rest2.Controllers;
-
+using System.Net;
+using System.Web.Http;
 namespace Pro.Dev.A.Tests
 {
     [TestClass]
