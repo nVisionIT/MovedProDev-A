@@ -9,7 +9,6 @@ namespace Pro.Dev.A.Tests
     [TestClass]
     public class ValuesControllerTests
     {
-        //dsfsdf
         ValuesController con;
 
         [TestInitialize]
